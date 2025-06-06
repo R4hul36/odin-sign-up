@@ -14,38 +14,45 @@ img {
   object-fit: cover;
 }
 
+
 .main {
   display: flex;
   margin: auto;
-  width: 65%;
+  width: 67%;
   height: 100vh;
   background-color: rgb(247, 246, 246);
 }
 
 .left-section {
-  width: 40%;
+  width: 35%;
 }
 .right-section {
-  width: 60%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .form-container {
   background-color: white;
-  padding-left: 100px;
+  padding-left: 30px;
   width: 100%;
 }
 
 form {
   display: flex;
-  width: 390px;
+  width: 30vw;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.top-description {
-  margin-top: 200px;
+.top-description > p {
+  width: 32vw;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
-.top-description {
-  margin-left: 100px;
-}
+
+
