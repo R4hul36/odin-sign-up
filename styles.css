@@ -47,6 +47,30 @@ form {
   gap: 30px;
 }
 
+.image-container {
+  position: relative;
+}
+
+.logo-section{
+  position: absolute;
+  top: 8rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-section img {
+  width: 3rem;
+  height: 4rem;
+}
+.logo-section span {
+  color: white;
+  font-size: 3rem;
+}
+
 .top-description > p {
   width: 32vw;
   margin-left: 30px;
@@ -54,5 +78,21 @@ form {
   font-size: 16px;
 }
 
+input[type="password"] {
+  outline: none;
+}
 
+input[type="password"]:invalid{
+  border: 1px red solid;
+}
 
+input[type="password"]:valid{
+  border: 1px green solid;
+}
+
+button[type="submit"] {
+  background-color: green;
+  padding: 5px 12px;
+  color: white;
+  border: none;
+}
