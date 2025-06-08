@@ -12,7 +12,7 @@
 
 body {
   background-color: black;
-  font-family: "Audiowide", sans-serif;
+  font-family: 'Audiowide', sans-serif;
 }
 
 img {
@@ -26,6 +26,7 @@ img {
   margin: auto;
   height: 100vh;
   background-color: rgb(247, 246, 246);
+  overflow: hidden;
 }
 
 .left-section {
@@ -54,6 +55,7 @@ img {
 
 .form-fields p > span {
   color: red;
+  font-weight: 100;
 }
 
 form {
@@ -102,7 +104,7 @@ h2 {
 }
 
 .credits a {
-  color:#fff;
+  color: #fff;
 }
 
 .top-description > p {
@@ -147,6 +149,7 @@ button[type='submit'] {
   border: none;
   margin-left: var(--margin-left);
   margin-top: 25px;
+  cursor: pointer;
 }
 
 .bottom-section > p {
