@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -12,7 +12,7 @@
         <div class="image-container">
           <img src="images/glacier.jpg" alt="glacier" />
           <div class="logo-section">
-            <img src="images/odin-lined.png" alt="odin-logo">
+            <img src="images/odin-lined.png" alt="odin-logo" />
             <span>Odin</span>
           </div>
         </div>
@@ -31,20 +31,20 @@
           <form action="#" method="">
             <div class="form-fields">
               <label for="first-name"
-                ><p>FIRST NAME</p>
-                <input type="text" id="first-name" name="first-name"
+                ><p>FIRST NAME <span>*</span></p>
+                <input type="text" id="first-name" name="first-name" required
               /></label>
             </div>
             <div class="form-fields">
-              <label for="lastt-name"
-                ><p>LAST NAME</p>
-                <input type="text" id="lastt-name" name="last-name"
+              <label for="last-name"
+                ><p>LAST NAME <span>*</span></p>
+                <input type="text" id="last-name" name="last-name" required
               /></label>
             </div>
             <div class="form-fields">
               <label for="email"
-                ><p>EMAIL</p>
-                <input type="email" id="email" name="email"
+                ><p>EMAIL <span>*</span></p>
+                <input type="email" id="email" name="email" required
               /></label>
             </div>
             <div class="form-fields">
@@ -55,26 +55,26 @@
             </div>
             <div class="form-fields">
               <label for="password"
-                ><p>PASSWORD</p>
+                ><p>PASSWORD <span>*</span></p>
                 <input type="password" id="password" name="password" required
               /></label>
             </div>
             <div class="form-fields">
               <label for="password"
-                ><p>CONFIRM PASSWORD</p>
+                ><p>CONFIRM PASSWORD <span>*</span></p>
                 <input type="password" id="password" name="password" required
               /></label>
             </div>
             <div class="submit-section">
               <button type="submit">Create Account</button>
-          </div>
-            
+            </div>
           </form>
         </div>
         <div class="bottom-section">
-          <p>Already have an account? Log in </p>
+          <p>
+            Already have an account? <span><a href="">Log in</a></span>
+          </p>
         </div>
-        
       </div>
     </div>
   </body>

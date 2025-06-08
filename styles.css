@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 :root {
-  --form-field-font-size: 10px;
-  --form-heading-size: 16px;
+  --top-description-font-size: 1.3rem;
+  --form-field-font-size: 12px;
+  --form-heading-size: 20px;
+  --margin-left: 35px;
 }
 
 body {
@@ -19,11 +21,9 @@ img {
   object-fit: cover;
 }
 
-
 .main {
   display: flex;
   margin: auto;
-  width: 67%;
   height: 100vh;
   background-color: rgb(247, 246, 246);
 }
@@ -41,63 +41,68 @@ img {
 
 .form-container {
   background-color: white;
-  padding: 1rem 0px 5rem 30px;
+  padding: 2rem 0px 7rem 35px;
   width: 100%;
   position: relative;
 }
 
 .form-fields p {
   font-size: var(--form-field-font-size) !important;
+  font-weight: 700;
+  color: rgb(95, 94, 94);
+}
+
+.form-fields p > span {
+  color: red;
 }
 
 form {
   display: flex;
-  width: 30vw;
+  width: 45vw;
   flex-wrap: wrap;
   gap: 15px;
   margin-top: 1rem;
-
 }
 
-h2{
- font-size: var(--form-heading-size);
+h2 {
+  font-size: var(--form-heading-size);
 }
 
 .image-container {
   position: relative;
 }
 
-.logo-section{
+.logo-section {
   position: absolute;
-  top: 8rem;
+  top: 13rem;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .logo-section img {
-  width: 3rem;
-  height: 4rem;
+  width: 90px;
+  height: 125px;
 }
 .logo-section span {
   color: white;
-  font-size: 3rem;
+  font-size: 3.8rem;
 }
 
 .top-description > p {
-  width: 34vw;
-  margin-left: 30px;
+  width: 50vw;
+  margin-left: var(--margin-left);
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--top-description-font-size);
 }
 
 input {
   outline: none;
-  width: 12rem;
-  padding: 0.2rem;
+  width: 18rem;
+  padding: 0.4rem;
   margin-top: 3px;
   border: 1.2px rgb(221, 220, 220) solid;
   border-radius: 5px;
@@ -105,34 +110,44 @@ input {
 
 input:focus {
   border-color: blue;
-  box-shadow: ;
+  box-shadow: 1px 1px 1px 1px rgb(230, 228, 228);
 }
 
-input[type="password"]:invalid{
+input[type='password']:invalid {
   border: 1.2px red solid;
 }
 
-input[type="password"]:valid{
+input[type='password']:valid {
   border: 1.2px green solid;
 }
 
-button[type="submit"] {
+input:focus:invalid {
+  border: 1.2px red solid;
+}
+
+button[type='submit'] {
   background-color: green;
-  padding: 8px 20px;
+  font-size: medium;
+  padding: 12px 40px;
   border-radius: 5px;
   color: white;
   border: none;
-  margin-left: 30px;
+  margin-left: var(--margin-left);
   margin-top: 25px;
 }
 
 .bottom-section > p {
-  margin-left: 30px;
+  margin-left: var(--margin-left);
   margin-bottom: 32px;
 }
 
+.bottom-section a {
+  color: green;
+  text-decoration: none;
+}
+
 #second-para {
-  margin: 16px 0px 12px 30px
+  margin: 16px 0px 12px 35px;
 }
 
 .submit-section {
