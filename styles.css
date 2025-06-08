@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 :root {
-  --top-description-font-size: 1.3rem;
-  --form-field-font-size: 12px;
-  --form-heading-size: 20px;
+  --top-description-font-size: 1.2rem;
+  --form-field-font-size: 0.8rem;
+  --form-heading-size: 1.4rem;
   --margin-left: 35px;
 }
 
 body {
   background-color: black;
-  font-family: sans-serif;
+  font-family: "Audiowide", sans-serif;
 }
 
 img {
@@ -80,16 +80,29 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .logo-section img {
-  width: 90px;
-  height: 125px;
+  width: 70px;
+  height: 90px;
 }
 .logo-section span {
   color: white;
   font-size: 3.8rem;
+}
+
+.credits {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.credits a {
+  color:#fff;
 }
 
 .top-description > p {
